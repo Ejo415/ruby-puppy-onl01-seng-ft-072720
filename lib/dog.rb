@@ -7,5 +7,7 @@ class Dog
   
   attr_accessor :name 
     
+    def self.all 
+      @@name
   
 end
