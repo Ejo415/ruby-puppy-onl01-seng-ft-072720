@@ -1,6 +1,11 @@
 class Dog 
   @@all = []
   @@names = []
+  
+   def self.save
+      @@all << self 
+    end
+    
   def initialize(name)
     @name = name
     self.save
@@ -21,8 +26,6 @@ class Dog
       puts @@names.length
     end
     
-    def self.save
-      @@all << self 
-    end
+   
   
 end
