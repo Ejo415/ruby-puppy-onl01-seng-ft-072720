@@ -23,7 +23,8 @@ class Dog
     end
     
     def self.print_all
-      puts @@names.length
+      puts @@all.all do |name|
+        
     end
     
    
