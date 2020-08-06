@@ -9,7 +9,7 @@ class Dog
   def initialize(name)
     @name = name
     save
-    @@names << name
+   
   end
   
   attr_accessor :name 
