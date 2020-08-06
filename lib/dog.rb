@@ -24,7 +24,7 @@ class Dog
     
     def self.print_all
       puts @@all.all do |name|
-        
+      end
     end
     
    
