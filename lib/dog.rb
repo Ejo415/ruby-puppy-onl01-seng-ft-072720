@@ -3,7 +3,7 @@ class Dog
   @@names = []
   def initialize(name)
     @name = name
-    @@all << self
+    self.save
     @@names << name
   end
   
@@ -19,6 +19,10 @@ class Dog
     
     def self.print_all
       puts @@names.length
+    end
+    
+    def self.save
+      @@all << self 
     end
   
 end
