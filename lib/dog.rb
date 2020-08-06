@@ -1,8 +1,10 @@
 class Dog 
   @@all = []
+  @@names = []
   def initialize(name)
     @name = name
     @@all << self
+    @@names << @name
   end
   
   attr_accessor :name 
@@ -16,7 +18,7 @@ class Dog
     end
     
     def self.print_all
-      puts @@all.join(" ")
+      puts @@names.join(" ")
     end
   
 end
