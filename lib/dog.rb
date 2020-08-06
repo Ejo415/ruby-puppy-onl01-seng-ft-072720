@@ -1,5 +1,5 @@
 class Dog 
-  @@name 
+  @@name = []
   def initialize(name)
     @name = name
     @@name << self
